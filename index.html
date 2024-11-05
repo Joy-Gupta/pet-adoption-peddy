@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link src="./style.css"/>
+    <title>Peddy</title>
+    
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+    
+    
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      .font-poppins {
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+                  colors: {
+                      
+                  },
+                  
+
+              }
+          }
+      }
+  </script>
+
+
+</head>
+<body class="font-manrope">
+
+            <!-- -------------------Header Section ----------------->
+
+
+    <header class="md:container mx-auto">
+      <nav class="  container mx-auto">
+        <div class="navbar ">
+            <div class="navbar-start">
+
+                <div class=" flex items-center gap-3">
+                    <h1
+                        class="rounded-full w-9 h-9 flex items-center justify-center p-2 text-xl font-semibold">
+                        <img src="./images/logo.webp" alt="" srcset="">
+                    </h1>
+                    <h1 class=" text-2xl md:text-3xl lg:text-4xl font-bold">
+
+                        Peddy</h1>
+                </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 xl:text-lg text-gray-500">
+                    <li class=" hover:text-black hover:font-semibold duration-200"><a>Home</a></li>
+                    <li class=" hover:text-black hover:font-semibold duration-200"><a>Shop</a></li>
+                    <li class=" hover:text-black hover:font-semibold duration-200"><a>Contact</a></li>
+
+
+                </ul>
+            </div>
+            <div class="  navbar-end  ">
+                <div class=" hidden md:flex gap-3 ">
+                    <div class=" flex items-center gap-2 ">
+                        <h1 class=" btn btn-circle bg-white"><i class="fa-regular fa-user"></i></h1>
+                    </div>
+                    
+                </div>
+                <div class="dropdown ">
+                    <div tabindex="0" role="button"
+                        class="btn btn-ghost lg:hidden text-2xl btn btn-circle bg-white sm:bg-transparent ">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                        <li><a>Home</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>Contact</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+      </nav>
+
+      <!----------------------- Hero section --------------------->
+
+
+      <section class=" container mx-auto mt-5">
+          
+          <div class="w-11/12 mx-auto text-center">
+              <h6>Bringing Families Together ❤️‍🔥</h6>
+              <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold">
+                Your Path to Adoption Starts Here</h1>
+              <br>
+              <p class="text-center">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+              <div class=" mt-8">
+                <button  id="goto-adopt"
+                    class="btn  text-lg border  w-full md:w-fit  mx-auto rounded-full bg-opacity-60 hover:bg-emerald-500">
+                    View
+                    More <span
+                        class="rounded-full w-9 h-9 flex items-center justify-center p-2 text-xl font-semibold"></span></button>
+              </div>
+            </div>
+            <div class="w-fit mx-auto">
+                <img src="./images/pet.webp" alt="" srcset="">
+            </div>
+            <div class="w-11/12 mx-auto text-center">
+                <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold">
+                    Adopt  Your  Best Friend</h3>
+                  <br>
+                  <p class="text-center">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+            </div>
+          
+      </section>
+    </header>
+
+    <!-- Main section  -->
+    <main>
+      <section  id="content" class=" container mx-auto">
+            <!-- spnner  -->
+            <div class=" relative hidden" id="spnner">
+
+                  <div class="loader absolute left-1/2  top-28">
+
+
+                        <section class="dots-container">
+                              <div class="dot"></div>
+                              <div class="dot"></div>
+                              <div class="dot"></div>
+                              <div class="dot"></div>
+                              <div class="dot"></div>
+                        </section>
+
+
+                  </div>
+            </div>
+
+          <!--category nav  ----------------->
+
+          <div id="categories" class="py-3 flex gap-3 justify-between">
+
+          </div>
+
+          <!-- Best Deal  -->
+          <div class="deal-container flex justify-between items-center mt-24">
+            <h3 class="text-lg md:text-xl font-bold text-gray-900">Best Deal For you</h3>
+            <button   id="sort-descending-btn" class="btn bg-gray-400 text-black font-bold ">Short by Price</button>
+
+        </div>
+
+        </section>
+
+
+
+
+  <!-- Card section----- -->
+
+    <section>
+
+      <div id="cardsection" class="lg:flex gap-3 mt-5">
+
+                <!-- Spinner -->
+                <div id="spinner"></div>
+
+
+                <div id="productsContainer"
+                  class="lg:w-8/12 mt-24 mx-10 grid grid-cols-1 min-h-96 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
+                  <!-- all product display here dynamically  -->
+                </div>
+
+                <!-- Modal details -->
+
+                <div id="modal-container" class="">
+                        
+                </div>
+
+                <!-- Adop Modal  -->
+                <div id="adop-modal-container">
+                              
+                </div>
+
+
+
+
+                <!-- Side bar----- -->
+
+              <div id="likebtn"class="lg:w-1/4 mt-4 lg:mt-0 rounded-lg border p-3">
+
+                 <div id="markAsReadContainer" class=" grid grid-cols-2    md:grid-cols-5 lg:grid-cols-2 justify-between   lg:justify-center gap-2 md:gap-2 lg:gap-2">
+                </div>
+                  <!-- dynamic content -->
+              </div>
+
+              <!-- all product  -->
+              
+      </div>
+
+    </section>
+</main>
+
+
+    
+    <!--------------------- Footer Section ---------------------->
+
+
+<footer>
+   
+  <section class="flex justify-evenly mt-10 bg-black text-white">
+    <div class=" my-10">
+        <div class="flex gap-3">
+          <div>
+            <img src="./images/logo.webp">
+          </div>
+          <div>
+            <h1 class="font-extrabold mb-5 text-xl">Peddy</h1>
+          </div>
+          
+        </div>
+        <p>Location: av. Washington 165, NY CA 54003<br>
+          Phone: +31 85 964 47 25<br>
+          Email: info@yourdomain.com<br>
+          Openings hours: 9.00 AM - 5.00 PM</p>
+          <div>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+          </div>
+    </div>
+    <div class="my-10">
+        <h3 class="font-semibold mb-5">Useful links</h3>
+        <a href="">
+            <p class="description">Home</p>
+        </a>
+        <a href="">
+            <p class="description">About Us</p>
+        </a>
+        <a href="">
+            <p class="description">Animals</p>
+        </a>
+        <a href="">
+            <p class="description">Foundation</p>
+        </a>
+        <a href="">
+          <p class="description">Contact</p>
+      </a>
+    </div>
+    <div class="my-10" >
+        <h3 class="font-semibold mb-5">Drop a message</h3>
+        <form action=>
+          <label for="fname">Enter Your Email</label><br>
+          <input type="text" id="fname" name="fname"><br><br>
+          <button class="bg-emerald-600 px-14">Subscribe</button>
+        </form>
+        
+    </div>
+</section>
+
+ </footer>
+
+
+ <script src="/api.js"></script>
+ <script src="/category.js"></script>
+ 
+ 
+
+</body>
+</html>
